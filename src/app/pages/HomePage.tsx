@@ -13,6 +13,7 @@ import {
   ExternalLink,
 } from "lucide-react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
+import { SEO } from "../components/SEO";
 import icvrHeroImage from "figma:asset/288f230a9b7fee0a70ca4dce070cc6c26a0e06a6.png";
 import selectsgHeroImage from "figma:asset/b5961788d9f6ea7adabbd818f48ed77a2bf304b5.png";
 
@@ -61,6 +62,10 @@ const technologies = [
 export function HomePage() {
   return (
     <div className="overflow-hidden">
+      <SEO
+        title="KindSoft - Web Development Company"
+        description="KindSoft delivers world-class web development, mobile apps, and custom software solutions to businesses globally. Based in Poltava, Ukraine."
+      />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-50 via-white to-yellow-50 py-20 md:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

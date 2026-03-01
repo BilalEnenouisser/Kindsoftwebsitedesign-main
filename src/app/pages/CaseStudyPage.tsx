@@ -12,6 +12,7 @@ import {
   Zap,
 } from "lucide-react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
+import { SEO } from "../components/SEO";
 import icvrHeroImage from "figma:asset/288f230a9b7fee0a70ca4dce070cc6c26a0e06a6.png";
 import selectsgHeroImage from "figma:asset/b5961788d9f6ea7adabbd818f48ed77a2bf304b5.png";
 import nyneHeroImage from "figma:asset/b3f05aa50e46344817f5851cc82c5cbdc699f657.png";
@@ -195,6 +196,7 @@ export function CaseStudyPage() {
   if (!study) {
     return (
       <div className="min-h-screen flex items-center justify-center">
+        <SEO title="Case Study Not Found - KindSoft" />
         <div className="text-center">
           <h1 className="text-4xl font-bold mb-4">Case Study Not Found</h1>
           <Link to="/portfolio" className="text-blue-600 hover:underline">
@@ -207,6 +209,10 @@ export function CaseStudyPage() {
 
   return (
     <div className="overflow-hidden">
+      <SEO
+        title={`${study.title} - KindSoft`}
+        description={`Read about our success story with ${study.title} and how we solved their digital challenges.`}
+      />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-50 via-white to-yellow-50 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

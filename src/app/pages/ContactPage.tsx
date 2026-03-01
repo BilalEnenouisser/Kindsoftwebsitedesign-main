@@ -2,6 +2,7 @@ import { motion } from "motion/react";
 import { Mail, Phone, MapPin, Send, Clock, Globe, Linkedin, MessageSquare } from "lucide-react";
 import { useState } from "react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
+import { SEO } from "../components/SEO";
 import officeImage from "figma:asset/c51b5260bbdedd657e002ec585d59acb9c4c0439.png";
 
 const contactInfo = [
@@ -79,6 +80,10 @@ export function ContactPage() {
 
   return (
     <div className="overflow-hidden">
+      <SEO
+        title="Contact - KindSoft"
+        description="Get in touch with KindSoft to discuss your next project. We're ready to help bring your vision to life."
+      />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-50 via-white to-yellow-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

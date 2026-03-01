@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import { ExternalLink, Award, Users, Zap } from "lucide-react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
+import { SEO } from "../components/SEO";
 import { useState } from "react";
 import { Link } from "react-router";
 import icvrHeroImage from "figma:asset/288f230a9b7fee0a70ca4dce070cc6c26a0e06a6.png";
@@ -85,6 +86,10 @@ export function PortfolioPage() {
 
   return (
     <div className="overflow-hidden">
+      <SEO
+        title="Portfolio - KindSoft"
+        description="Discover our portfolio of successful projects, from creative studios to enterprise-level construction platforms."
+      />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-50 via-white to-yellow-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -137,11 +142,10 @@ export function PortfolioPage() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => setSelectedCategory(category)}
-                className={`px-6 py-3 rounded-lg font-medium transition-all ${
-                  selectedCategory === category
+                className={`px-6 py-3 rounded-lg font-medium transition-all ${selectedCategory === category
                     ? "bg-gradient-to-r from-blue-600 to-blue-500 text-white shadow-lg"
                     : "bg-white text-gray-700 hover:bg-gray-100"
-                }`}
+                  }`}
               >
                 {category}
               </motion.button>

@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { FileText, Scale, UserCheck, AlertCircle, Gavel, Info } from "lucide-react";
+import { SEO } from "../components/SEO";
 
 const sections = [
   {
@@ -139,6 +140,10 @@ Force Majeure:
 export function TermsOfServicePage() {
   return (
     <div className="overflow-hidden">
+      <SEO
+        title="Terms of Service - KindSoft"
+        description="Read KindSoft's terms of service for our digital solutions and services."
+      />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-50 via-white to-yellow-50 py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

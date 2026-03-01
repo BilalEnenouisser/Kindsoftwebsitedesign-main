@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import { Award, Users, TrendingUp, Heart, Target, Lightbulb, Shield, Rocket, CheckCircle2 } from "lucide-react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
+import { SEO } from "../components/SEO";
 import officeImage from "figma:asset/c51b5260bbdedd657e002ec585d59acb9c4c0439.png";
 
 const values = [
@@ -75,6 +76,10 @@ const stats = [
 export function AboutPage() {
   return (
     <div className="overflow-hidden">
+      <SEO
+        title="About - KindSoft"
+        description="Learn about KindSoft's 15-year journey of creating exceptional digital solutions and our commitment to technical excellence."
+      />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-50 via-white to-yellow-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -232,7 +237,7 @@ export function AboutPage() {
 
           <div className="relative">
             <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-white/20" />
-            
+
             <div className="space-y-12">
               {milestones.map((milestone, index) => (
                 <motion.div
@@ -241,9 +246,8 @@ export function AboutPage() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
-                  className={`flex items-center gap-8 ${
-                    index % 2 === 0 ? "flex-row" : "flex-row-reverse"
-                  }`}
+                  className={`flex items-center gap-8 ${index % 2 === 0 ? "flex-row" : "flex-row-reverse"
+                    }`}
                 >
                   <div className={`flex-1 ${index % 2 === 0 ? "text-right" : "text-left"}`}>
                     <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20 inline-block">

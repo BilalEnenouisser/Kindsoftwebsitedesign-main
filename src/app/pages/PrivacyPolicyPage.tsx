@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { Shield, Lock, Eye, Database, Bell, Mail } from "lucide-react";
+import { SEO } from "../components/SEO";
 
 const sections = [
   {
@@ -93,6 +94,10 @@ This Privacy Policy is effective as of February 28, 2026, and will remain in eff
 export function PrivacyPolicyPage() {
   return (
     <div className="overflow-hidden">
+      <SEO
+        title="Privacy Policy - KindSoft"
+        description="Read KindSoft's privacy policy to understand how we protect your information."
+      />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-50 via-white to-yellow-50 py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
