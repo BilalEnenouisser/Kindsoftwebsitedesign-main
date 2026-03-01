@@ -22,7 +22,27 @@ import samRabbaniImage from "figma:asset/03b327abe3e6f56aee58a69470ae9742e0b2256
 import andreaDegasperiImage from "figma:asset/d4db724ecb7f9f0eef4be8ac049b1c50810b055b.png";
 import luxoitaliaHeroImage from "figma:asset/8ab23a4f36f7fd20979c22db118e5c4d087561fa.png";
 
-const caseStudies = {
+interface CaseStudy {
+  id: string;
+  title: string;
+  subtitle: string;
+  client: string;
+  industry: string;
+  url: string;
+  duration: string;
+  team: string;
+  emoji: string;
+  heroImage: string;
+  challenge: string;
+  solution: string;
+  technologies: string[];
+  results: { label: string; value: string; icon: any }[];
+  keyFeatures: string[];
+  testimonial: { quote: string; author: string; role: string; image: string };
+  processImage?: string;
+}
+
+const caseStudies: Record<string, CaseStudy> = {
   icvr: {
     id: "icvr",
     title: "ICVR.io - Creative Studio & Game Development",
