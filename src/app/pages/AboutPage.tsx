@@ -3,6 +3,7 @@ import { Award, Users, TrendingUp, Heart, Target, Lightbulb, Shield, Rocket, Che
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { SEO } from "../components/SEO";
 import officeImage from "figma:asset/c51b5260bbdedd657e002ec585d59acb9c4c0439.png";
+import teamImage from "figma:asset/team.jpg";
 
 const values = [
   {
@@ -360,8 +361,8 @@ export function AboutPage() {
             >
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1758520144661-73849bde0da1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXVjYXNpYW4lMjBwcm9mZXNzaW9uYWxzJTIwY2VsZWJyYXRpbmclMjBvZmZpY2V8ZW58MXx8fHwxNzcxNDgyNjc3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                  alt="Team celebration"
+                  src={teamImage}
+                  alt="KindSoft team collaboration"
                   className="w-full h-[500px] object-cover"
                 />
               </div>
