@@ -9,16 +9,31 @@ export function SEO({ title, description }: SEOProps) {
     useEffect(() => {
         document.title = title;
 
-        if (description) {
-            const metaDescription = document.querySelector('meta[name="description"]');
-            if (metaDescription) {
-                metaDescription.setAttribute('content', description);
+        const updateMeta = (name: string, content: string, isProperty = false) => {
+            const selector = isProperty ? `meta[property="${name}"]` : `meta[name="${name}"]`;
+            let meta = document.querySelector(selector);
+            if (meta) {
+                meta.setAttribute('content', content);
             } else {
-                const meta = document.createElement('meta');
-                meta.name = 'description';
-                meta.content = description;
+                meta = document.createElement('meta');
+                if (isProperty) {
+                    meta.setAttribute('property', name);
+                } else {
+                    meta.setAttribute('name', name);
+                }
+                meta.setAttribute('content', content);
                 document.head.appendChild(meta);
             }
+        };
+
+        updateMeta('title', title);
+        updateMeta('og:title', title, true);
+        updateMeta('twitter:title', title);
+
+        if (description) {
+            updateMeta('description', description);
+            updateMeta('og:description', description, true);
+            updateMeta('twitter:description', description);
         }
     }, [title, description]);
 
