@@ -64,11 +64,53 @@ export function ContactPage() {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [status, setStatus] = useState<{
+    type: "idle" | "loading" | "success" | "error";
+    message: string;
+  }>({ type: "idle", message: "" });
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    console.log("Form submitted:", formData);
-    alert("Thank you for your message! We'll get back to you within 24 hours. ✨");
+    setStatus({ type: "loading", message: "Sending your message..." });
+
+    try {
+      const response = await fetch("/php/handler.php", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (result.status === "success") {
+        setStatus({
+          type: "success",
+          message: "Thank you! Your message has been sent successfully. ✨",
+        });
+        setFormData({
+          name: "",
+          email: "",
+          company: "",
+          phone: "",
+          service: "web",
+          budget: "",
+          message: "",
+        });
+      } else {
+        setStatus({
+          type: "error",
+          message: result.message || "Oops! Something went wrong. Please try again later.",
+        });
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      setStatus({
+        type: "error",
+        message: "Failed to connect to the server. Please check your internet connection.",
+      });
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -257,11 +299,31 @@ export function ContactPage() {
                   />
                 </div>
 
+                {status.type !== "idle" && (
+                  <div
+                    className={`p-4 rounded-lg text-sm font-medium ${status.type === "loading"
+                      ? "bg-blue-50 text-blue-700 border border-blue-200"
+                      : status.type === "success"
+                        ? "bg-green-50 text-green-700 border border-green-200"
+                        : "bg-red-50 text-red-700 border border-red-200"
+                      }`}
+                  >
+                    <div className="flex items-center gap-2">
+                      {status.type === "loading" && (
+                        <div className="w-4 h-4 border-2 border-blue-600 border-t-transparent rounded-full animate-spin" />
+                      )}
+                      {status.message}
+                    </div>
+                  </div>
+                )}
+
                 <button
                   type="submit"
-                  className="w-full px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold rounded-lg hover:shadow-xl transform hover:scale-105 transition-all flex items-center justify-center gap-2"
+                  disabled={status.type === "loading"}
+                  className={`w-full px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold rounded-lg hover:shadow-xl transform hover:scale-105 transition-all flex items-center justify-center gap-2 ${status.type === "loading" ? "opacity-70 cursor-not-allowed" : ""
+                    }`}
                 >
-                  Send Message <Send size={20} />
+                  {status.type === "loading" ? "Sending..." : "Send Message"} <Send size={20} />
                 </button>
 
                 <p className="text-sm text-gray-600 text-center">
