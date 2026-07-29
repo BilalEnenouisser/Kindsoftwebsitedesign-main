@@ -13,10 +13,12 @@ lerna-debug.log*
 .env.production
 .env.development
 
+
 node_modules
 dist
 dist-ssr
 *.local
+php/config.php
 
 # Editor directories and files
 .vscode/*

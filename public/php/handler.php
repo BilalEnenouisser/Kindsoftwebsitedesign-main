@@ -53,6 +53,36 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     exit;
 }
 
+// Verify Captcha if enabled
+if (CAPTCHA_ENABLED) {
+    if (!isset($data['recaptcha_token']) || empty($data['recaptcha_token'])) {
+        echo json_encode(['status' => 'error', 'message' => 'Please complete the captcha.']);
+        exit;
+    }
+
+    $verify_url = 'https://www.google.com/recaptcha/api/siteverify';
+    $verify_data = [
+        'secret' => CAPTCHA_SECRET_KEY,
+        'response' => $data['recaptcha_token']
+    ];
+
+    $options = [
+        'http' => [
+            'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
+            'method'  => 'POST',
+            'content' => http_build_query($verify_data)
+        ]
+    ];
+    $context  = stream_context_create($options);
+    $verify_response = @file_get_contents($verify_url, false, $context);
+    $captcha_success = json_decode($verify_response);
+
+    if (!$captcha_success || !$captcha_success->success || (isset($captcha_success->score) && $captcha_success->score < 0.5)) {
+        echo json_encode(['status' => 'error', 'message' => MSG_CAPTCHA_ERROR]);
+        exit;
+    }
+}
+
 // Prepare email content
 $subject = SUBJECT_PREFIX . $name;
 $email_body = "You have received a new message from your website contact form.\n\n";
@@ -62,7 +92,7 @@ $email_body .= "Email: $email\n";
 if (!empty($company)) $email_body .= "Company: $company\n";
 if (!empty($phone)) $email_body .= "Phone: $phone\n";
 $email_body .= "Service Requested: $service\n";
-if (!empty($budget)) $email_body .= "Estimated Budget: $budget\n";
+if (!empty($budget)) $email_body .= "Your Messenger: $budget\n";
 $email_body .= "\n--- Message ---\n";
 $email_body .= $message . "\n";
 

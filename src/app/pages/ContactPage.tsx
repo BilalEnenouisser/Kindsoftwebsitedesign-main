@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { Mail, Phone, MapPin, Send, Clock, Globe, Linkedin, MessageSquare } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { SEO } from "../components/SEO";
 import officeImage from "figma:asset/c51b5260bbdedd657e002ec585d59acb9c4c0439.png";
@@ -69,17 +69,35 @@ export function ContactPage() {
     message: string;
   }>({ type: "idle", message: "" });
 
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus({ type: "loading", message: "Sending your message..." });
 
     try {
+      // Get Recaptcha v3 Token
+      const siteKey = '6Lc1qn8sAAAAAJTG6vI2sLdCvYlXrdyab4s4_imy';
+      const recaptchaToken = await new Promise<string>((resolve, reject) => {
+        if (!(window as any).grecaptcha) {
+          reject(new Error("Recaptcha not loaded"));
+          return;
+        }
+        (window as any).grecaptcha.ready(() => {
+          (window as any).grecaptcha.execute(siteKey, { action: 'contact' }).then((token: string) => {
+            resolve(token);
+          });
+        });
+      });
+
       const response = await fetch("/php/handler.php", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          ...formData,
+          recaptcha_token: recaptchaToken
+        }),
       });
 
       const result = await response.json();
@@ -267,20 +285,16 @@ export function ContactPage() {
                   </div>
                   <div>
                     <label className="block text-sm font-semibold mb-2 text-gray-700">
-                      Estimated Budget
+                      Your Messenger
                     </label>
-                    <select
+                    <input
+                      type="text"
                       name="budget"
                       value={formData.budget}
                       onChange={handleChange}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
-                    >
-                      <option value="">Select budget range</option>
-                      <option value="10k-25k">$10,000 - $25,000</option>
-                      <option value="25k-50k">$25,000 - $50,000</option>
-                      <option value="50k-100k">$50,000 - $100,000</option>
-                      <option value="100k+">$100,000+</option>
-                    </select>
+                      placeholder="WhatsApp +1234567899"
+                    />
                   </div>
                 </div>
 
@@ -298,6 +312,7 @@ export function ContactPage() {
                     placeholder="Tell us about your project requirements, goals, and timeline..."
                   />
                 </div>
+
 
                 {status.type !== "idle" && (
                   <div
