@@ -173,7 +173,7 @@ export function CaseStudyPage() {
   if (!study) {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <SEO title="Case Study Not Found - KindSoft" />
+        <SEO title="Case Study Not Found - KindSoft" noindex />
         <div className="text-center">
           <h1 className="text-4xl font-bold mb-4">Case Study Not Found</h1>
           <Link to="/portfolio" className="text-blue-600 hover:underline">
@@ -189,6 +189,7 @@ export function CaseStudyPage() {
       <SEO
         title={`${study.title} - KindSoft`}
         description={`Read about our success story with ${study.title} and how we solved their digital challenges.`}
+        noindex
       />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-50 via-white to-yellow-50 py-12">

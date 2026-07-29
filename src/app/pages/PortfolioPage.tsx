@@ -7,7 +7,6 @@ import { Link } from "react-router";
 import selectsgHeroImage from "figma:asset/b5961788d9f6ea7adabbd818f48ed77a2bf304b5.png";
 import nyneHeroImage from "figma:asset/b3f05aa50e46344817f5851cc82c5cbdc699f657.png";
 import luxoitaliaHeroImage from "figma:asset/8ab23a4f36f7fd20979c22db118e5c4d087561fa.png";
-import dmitroImage from "figma:asset/d8f278b8e6af43621dae5ce575a16f48ee2e891c.png";
 import brianHornImage from "figma:asset/dab3f72db8b2640d2d37317456ae494c26cd8e8b.png";
 import samRabbaniImage from "figma:asset/03b327abe3e6f56aee58a69470ae9742e0b2256a.png";
 import andreaDegasperiImage from "figma:asset/d4db724ecb7f9f0eef4be8ac049b1c50810b055b.png";
@@ -75,6 +74,7 @@ export function PortfolioPage() {
       <SEO
         title="Portfolio - KindSoft"
         description="Discover our portfolio of successful projects, from creative studios to enterprise-level construction platforms."
+        noindex
       />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-50 via-white to-yellow-50 py-20">
@@ -220,16 +220,8 @@ export function PortfolioPage() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              {
-                quote:
-                  "KindSoft understood our creative vision perfectly. They built a platform that truly represents our cutting-edge work in games and interactive experiences.",
-                author: "Dmytro",
-                role: "ICVR Interactive",
-                image: dmitroImage,
-                rating: 5,
-              },
               {
                 quote:
                   "The new platform transformed our online presence. Sales increased by 280% in the first quarter, and customer feedback has been overwhelmingly positive.",

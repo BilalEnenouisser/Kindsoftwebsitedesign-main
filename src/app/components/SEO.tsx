@@ -3,9 +3,10 @@ import { useEffect } from 'react';
 interface SEOProps {
     title: string;
     description?: string;
+    noindex?: boolean;
 }
 
-export function SEO({ title, description }: SEOProps) {
+export function SEO({ title, description, noindex = false }: SEOProps) {
     useEffect(() => {
         document.title = title;
 
@@ -35,7 +36,16 @@ export function SEO({ title, description }: SEOProps) {
             updateMeta('og:description', description, true);
             updateMeta('twitter:description', description);
         }
-    }, [title, description]);
+
+        // Handle robots meta tag
+        const robotsContent = noindex ? 'noindex, nofollow' : 'index, follow';
+        updateMeta('robots', robotsContent);
+
+        return () => {
+            // Reset robots to indexable when leaving the page
+            updateMeta('robots', 'index, follow');
+        };
+    }, [title, description, noindex]);
 
     return null;
 }
