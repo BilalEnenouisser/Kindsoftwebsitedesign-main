@@ -13,7 +13,6 @@ import {
 } from "lucide-react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { SEO } from "../components/SEO";
-import icvrHeroImage from "figma:asset/288f230a9b7fee0a70ca4dce070cc6c26a0e06a6.png";
 import selectsgHeroImage from "figma:asset/b5961788d9f6ea7adabbd818f48ed77a2bf304b5.png";
 import nyneHeroImage from "figma:asset/b3f05aa50e46344817f5851cc82c5cbdc699f657.png";
 import dmitroImage from "figma:asset/d8f278b8e6af43621dae5ce575a16f48ee2e891c.png";
@@ -43,48 +42,6 @@ interface CaseStudy {
 }
 
 const caseStudies: Record<string, CaseStudy> = {
-  icvr: {
-    id: "icvr",
-    title: "ICVR.io - Creative Studio & Game Development",
-    subtitle: "Cutting Edge Software, Art, and Games",
-    client: "ICVR Technologies",
-    industry: "Creative Technology & Gaming",
-    url: "https://icvr.io",
-    duration: "12 months",
-    team: "10 specialists",
-    emoji: "🎮",
-    heroImage: icvrHeroImage,
-    challenge:
-      "ICVR needed a comprehensive digital presence to showcase their cutting-edge work in game development, interactive experiences, and creative software. The platform had to reflect their award-winning status and attract major clients like Qualcomm, Paramount, Disney, Spotify, Citrix, and Perforce while highlighting their Best Tech Work Culture award.",
-    solution:
-      "We developed a stunning WordPress-based portfolio platform with high-quality custom animations and interactive elements. The site features dynamic project showcases with GSAP-powered transitions, scroll-triggered animations, custom parallax effects, and immersive video backgrounds. Custom post types showcase their Roblox experiences, branded activations for Tostitos and Away, and creative projects for Qualcomm, Paramount, and Disney with fluid, eye-catching animations.",
-    technologies: ["WordPress", "PHP", "MySQL", "High Quality Custom Animations", "Custom Plugins", "GSAP"],
-    results: [
-      { label: "Major Clients", value: "50+", icon: Users },
-      { label: "Industry Awards", value: "12+", icon: Award },
-      { label: "Projects", value: "100+", icon: Zap },
-      { label: "Roblox Experiences", value: "15+", icon: TrendingUp },
-    ],
-    keyFeatures: [
-      "Custom WordPress theme with interactive portfolio showcase",
-      "High-quality custom animations with GSAP and smooth transitions",
-      "Dynamic project galleries with parallax scrolling effects",
-      "Custom post types for games and interactive experiences",
-      "Award and recognition showcase with animated counters",
-      "Client logo wall featuring Qualcomm, Paramount, Disney, Spotify, Citrix, Perforce",
-      "Scroll-triggered animations and video backgrounds",
-      "Blog and insights section with custom taxonomies",
-    ],
-    testimonial: {
-      quote:
-        "KindSoft understood our creative vision perfectly. They built a platform that truly represents our cutting-edge work in games and interactive experiences. Our client inquiries increased significantly after launch.",
-      author: "Dmytro",
-      role: "ICVR Interactive",
-      image: dmitroImage,
-    },
-    processImage:
-      "https://images.unsplash.com/photo-1556438064-2d7646166914?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx2aWRlbyUyMGdhbWUlMjBkZXZlbG9wbWVudHxlbnwxfHx8fDE3NzE0NjA3Mzh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-  },
   nyne: {
     id: "nyne",
     title: "NYNE.com - Premium Audio E-commerce",

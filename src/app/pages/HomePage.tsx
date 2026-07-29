@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { SEO } from "../components/SEO";
-import icvrHeroImage from "figma:asset/288f230a9b7fee0a70ca4dce070cc6c26a0e06a6.png";
+import nyneHeroImage from "figma:asset/b3f05aa50e46344817f5851cc82c5cbdc699f657.png";
 import selectsgHeroImage from "figma:asset/b5961788d9f6ea7adabbd818f48ed77a2bf304b5.png";
 
 const stats = [
@@ -288,7 +288,7 @@ export function HomePage() {
           </motion.div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {/* ICVR Project */}
+            {/* NYNE Project */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -298,28 +298,27 @@ export function HomePage() {
             >
               <div className="relative h-64 overflow-hidden">
                 <ImageWithFallback
-                  src={icvrHeroImage}
-                  alt="ICVR.io - Creative Studio & Game Development"
+                  src={nyneHeroImage}
+                  alt="NYNE.com - Premium Audio E-commerce"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4">
                   <span className="inline-block px-3 py-1 bg-blue-600 text-white text-sm rounded-full mb-2">
-                    Web Apps
+                    E-commerce
                   </span>
                   <h3 className="text-white font-bold text-xl">
-                    ICVR.io <span className="text-2xl">🎮</span>
+                    NYNE.com <span className="text-2xl">🔊</span>
                   </h3>
                 </div>
               </div>
               <div className="p-6">
-                <h4 className="font-bold text-lg mb-2">Creative Studio & Game Development</h4>
+                <h4 className="font-bold text-lg mb-2">Premium Audio E-commerce</h4>
                 <p className="text-gray-600 mb-4">
-                  Award-winning creative studio platform showcasing game development, interactive
-                  experiences for Qualcomm, Paramount, Disney, Spotify, and more.
+                  Sophisticated e-commerce platform for premium audio products. Lifestyle-inspired speakers, headphones, and audio accessories.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  {["WordPress", "PHP", "MySQL", "High Quality Custom Animations"].map((tech) => (
+                  {["WordPress", "WooCommerce", "PHP", "MySQL"].map((tech) => (
                     <span
                       key={tech}
                       className="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-lg"
@@ -330,11 +329,11 @@ export function HomePage() {
                 </div>
                 <div className="flex items-center justify-between pt-4 border-t border-gray-200">
                   <div className="flex gap-4 text-sm text-gray-600">
-                    <span>👥 50+ clients</span>
-                    <span>🏆 12+ awards</span>
+                    <span>📦 150+ products</span>
+                    <span>📈 +280% sales</span>
                   </div>
                   <Link
-                    to="/case-study/icvr"
+                    to="/case-study/nyne"
                     className="text-blue-600 font-semibold flex items-center gap-2 hover:gap-3 transition-all"
                   >
                     View Case Study <ArrowRight size={16} />

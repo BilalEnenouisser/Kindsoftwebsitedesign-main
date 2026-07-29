@@ -4,7 +4,6 @@ import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { SEO } from "../components/SEO";
 import { useState } from "react";
 import { Link } from "react-router";
-import icvrHeroImage from "figma:asset/288f230a9b7fee0a70ca4dce070cc6c26a0e06a6.png";
 import selectsgHeroImage from "figma:asset/b5961788d9f6ea7adabbd818f48ed77a2bf304b5.png";
 import nyneHeroImage from "figma:asset/b3f05aa50e46344817f5851cc82c5cbdc699f657.png";
 import luxoitaliaHeroImage from "figma:asset/8ab23a4f36f7fd20979c22db118e5c4d087561fa.png";
@@ -16,19 +15,6 @@ import andreaDegasperiImage from "figma:asset/d4db724ecb7f9f0eef4be8ac049b1c5081
 const categories = ["All", "Web Apps", "Mobile Apps", "E-commerce", "Enterprise"];
 
 const projects = [
-  {
-    id: "icvr",
-    title: "ICVR.io - Creative Studio & Game Development",
-    category: "Web Apps",
-    client: "ICVR Technologies",
-    description:
-      "Cutting edge portfolio platform for award-winning creative studio. Showcasing game development, interactive experiences, and branded activations for Qualcomm, Paramount, Disney, Spotify, Citrix, Perforce. Best Tech Work Culture award winner.",
-    image: icvrHeroImage,
-    technologies: ["WordPress", "PHP", "MySQL", "High Quality Custom Animations"],
-    emoji: "🎮",
-    stats: { clients: "50+", awards: "12+", projects: "100+" },
-    url: "icvr.io",
-  },
   {
     id: "nyne",
     title: "NYNE.com - Premium Audio E-commerce",
