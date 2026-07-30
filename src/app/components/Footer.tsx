@@ -11,7 +11,7 @@ export function Footer() {
           <div className="col-span-1 md:col-span-2">
             <Logo />
             <p className="mt-4 text-gray-600 max-w-md">
-              KindSoft is an international web studio with 15 years of experience in delivering
+              KindSoftUA is an international web studio with 15 years of experience in delivering
               exceptional web solutions, mobile apps, and custom software for businesses worldwide.
             </p>
             <div className="flex gap-4 mt-6">
@@ -79,8 +79,8 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2 text-gray-600">
                 <Mail size={18} className="flex-shrink-0 text-blue-600" />
-                <a href="mailto:Hello@KindSoft.co" className="hover:text-blue-600">
-                  Hello@KindSoft.co
+                <a href="mailto:Hello@KindSoftUA.co" className="hover:text-blue-600">
+                  Hello@KindSoftUA.co
                 </a>
               </li>
               <li className="flex items-center gap-2 text-gray-600">
@@ -95,7 +95,7 @@ export function Footer() {
 
         <div className="mt-12 pt-8 border-t border-gray-200 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-gray-600 text-sm">
-            © 2011-2026 KindSoft. All rights reserved.
+            © 2011-2026 KindSoftUA. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-gray-600">
             <Link to="/privacy-policy" className="hover:text-blue-600 transition-colors">

@@ -9,8 +9,8 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email Us",
-    detail: "Hello@KindSoft.co",
-    link: "mailto:Hello@KindSoft.co",
+    detail: "Hello@KindSoftUA.co",
+    link: "mailto:Hello@KindSoftUA.co",
     emoji: "📧",
   },
   {
@@ -141,8 +141,8 @@ export function ContactPage() {
   return (
     <div className="overflow-hidden">
       <SEO
-        title="Contact - KindSoft"
-        description="Get in touch with KindSoft to discuss your next project. We're ready to help bring your vision to life."
+        title="Contact - KindSoftUA"
+        description="Get in touch with KindSoftUA to discuss your next project. We're ready to help bring your vision to life."
       />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-50 via-white to-yellow-50 py-20">
@@ -402,7 +402,7 @@ export function ContactPage() {
                     LinkedIn
                   </a>
                   <a
-                    href="https://clutch.co/profile/kindsoft"
+                    href="https://clutch.co/profile/KindSoftUA"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex-1 px-4 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-lg hover:shadow-lg transition-all flex items-center justify-center gap-2"
@@ -428,7 +428,7 @@ export function ContactPage() {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl h-64">
                 <ImageWithFallback
                   src={officeImage}
-                  alt="KindSoft office"
+                  alt="KindSoftUA office"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 to-transparent flex items-end">
@@ -488,7 +488,7 @@ export function ContactPage() {
               Ready to Get Started? <span className="text-4xl md:text-5xl">🚀</span>
             </h2>
             <p className="text-xl text-gray-600 mb-8">
-              Join 150+ satisfied clients who trust KindSoft with their digital solutions
+              Join 150+ satisfied clients who trust KindSoftUA with their digital solutions
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a

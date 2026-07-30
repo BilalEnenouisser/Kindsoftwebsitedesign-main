@@ -63,8 +63,8 @@ export function HomePage() {
   return (
     <div className="overflow-hidden">
       <SEO
-        title="KindSoft - Web Development Company"
-        description="KindSoft delivers world-class web development, mobile apps, and custom software solutions to businesses globally. Based in Poltava, Ukraine."
+        title="KindSoftUA - Web Development Company"
+        description="KindSoftUA delivers world-class web development, mobile apps, and custom software solutions to businesses globally. Based in Poltava, Ukraine."
       />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-50 via-white to-yellow-50 py-20 md:py-32">
@@ -87,7 +87,7 @@ export function HomePage() {
                 Since 2011 ✨
               </h1>
               <p className="text-xl text-gray-600 mb-8">
-                KindSoft delivers world-class web development, mobile apps, and custom software
+                KindSoftUA delivers world-class web development, mobile apps, and custom software
                 solutions to businesses globally. Based in Poltava, Ukraine 🇺🇦
               </p>
               <div className="flex flex-wrap gap-4">
@@ -237,7 +237,7 @@ export function HomePage() {
               viewport={{ once: true }}
             >
               <h2 className="text-4xl font-bold mb-6">
-                Why Choose KindSoft? <span className="text-4xl">💎</span>
+                Why Choose KindSoftUA? <span className="text-4xl">💎</span>
               </h2>
               <p className="text-xl text-gray-600 mb-8">
                 We're not just developers – we're your strategic technology partner committed to

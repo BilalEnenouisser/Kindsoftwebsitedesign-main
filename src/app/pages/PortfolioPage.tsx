@@ -72,7 +72,7 @@ export function PortfolioPage() {
   return (
     <div className="overflow-hidden">
       <SEO
-        title="Portfolio - KindSoft"
+        title="Portfolio - KindSoftUA"
         description="Discover our portfolio of successful projects, from creative studios to enterprise-level construction platforms."
         noindex
       />
@@ -232,7 +232,7 @@ export function PortfolioPage() {
               },
               {
                 quote:
-                  "KindSoft modernized our 40-year-old business with a platform that perfectly serves both our contractors and retail customers.",
+                  "KindSoftUA modernized our 40-year-old business with a platform that perfectly serves both our contractors and retail customers.",
                 author: "Brian Horn",
                 role: "Select Sand & Gravel",
                 image: brianHornImage,
@@ -240,7 +240,7 @@ export function PortfolioPage() {
               },
               {
                 quote:
-                  "KindSoft transformed our vision into an exquisite digital experience. Our bookings increased by 320% within six months.",
+                  "KindSoftUA transformed our vision into an exquisite digital experience. Our bookings increased by 320% within six months.",
                 author: "Andrea Degasperi",
                 role: "Luxo Italia Travel",
                 image: andreaDegasperiImage,
@@ -292,7 +292,7 @@ export function PortfolioPage() {
               Let's Create Your Success Story <span className="text-4xl md:text-5xl">🚀</span>
             </h2>
             <p className="text-xl text-gray-600 mb-8">
-              Join our list of satisfied clients and bring your vision to life with KindSoft
+              Join our list of satisfied clients and bring your vision to life with KindSoftUA
             </p>
             <a
               href="/contact"

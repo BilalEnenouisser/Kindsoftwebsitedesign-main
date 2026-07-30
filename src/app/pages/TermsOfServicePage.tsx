@@ -6,7 +6,7 @@ const sections = [
   {
     icon: UserCheck,
     title: "Acceptance of Terms",
-    content: `By accessing and using the KindSoft website (kindsoft.com) and services, you accept and agree to be bound by these Terms of Service and our Privacy Policy. If you do not agree to these terms, please do not use our website or services.
+    content: `By accessing and using the KindSoftUA website (KindSoftUA.com) and services, you accept and agree to be bound by these Terms of Service and our Privacy Policy. If you do not agree to these terms, please do not use our website or services.
 
 These terms apply to all visitors, users, and others who access or use our services, including clients who engage us for web development, mobile app development, or custom software development projects.
 
@@ -15,7 +15,7 @@ We reserve the right to modify these terms at any time. Your continued use of ou
   {
     icon: FileText,
     title: "Services Description",
-    content: `KindSoft provides professional software development services, including but not limited to:
+    content: `KindSoftUA provides professional software development services, including but not limited to:
 
 • Web Development: Custom websites, web applications, e-commerce platforms, and content management systems
 • Mobile App Development: Native iOS and Android apps, cross-platform solutions
@@ -23,7 +23,7 @@ We reserve the right to modify these terms at any time. Your continued use of ou
 • UI/UX Design: User interface and user experience design services
 • Consulting: Technical consulting and architecture planning
 
-All projects are subject to separate project agreements that detail scope, deliverables, timelines, and payment terms. These Terms of Service govern the general relationship between KindSoft and clients.`,
+All projects are subject to separate project agreements that detail scope, deliverables, timelines, and payment terms. These Terms of Service govern the general relationship between KindSoftUA and clients.`,
   },
   {
     icon: Scale,
@@ -34,10 +34,10 @@ Client-Owned Work:
 • Upon full payment, clients receive ownership of custom code and designs created specifically for their project
 • Clients receive necessary licenses to use the delivered software and materials
 
-KindSoft-Owned Property:
-• Pre-existing tools, frameworks, libraries, and components remain KindSoft property
-• KindSoft retains the right to showcase completed projects in our portfolio unless otherwise agreed
-• Generic solutions and methodologies developed remain KindSoft property
+KindSoftUA-Owned Property:
+• Pre-existing tools, frameworks, libraries, and components remain KindSoftUA property
+• KindSoftUA retains the right to showcase completed projects in our portfolio unless otherwise agreed
+• Generic solutions and methodologies developed remain KindSoftUA property
 
 Third-Party Components:
 • Open-source and third-party components are subject to their respective licenses
@@ -87,7 +87,7 @@ The client acknowledges that software development involves inherent uncertaintie
     title: "Limitation of Liability",
     content: `To the maximum extent permitted by law:
 
-• KindSoft's total liability for any claim shall not exceed the total amount paid by the client for the specific project or service
+• KindSoftUA's total liability for any claim shall not exceed the total amount paid by the client for the specific project or service
 • We are not liable for indirect, incidental, consequential, or punitive damages
 • We are not liable for loss of profits, revenue, data, or business opportunities
 • We are not liable for damages resulting from client's use or inability to use deliverables
@@ -97,23 +97,23 @@ Exceptions:
 • This limitation does not apply to liabilities that cannot be excluded by law
 
 Client Indemnification:
-• Client agrees to indemnify KindSoft against claims arising from client's content, data, or use of deliverables in violation of law or third-party rights`,
+• Client agrees to indemnify KindSoftUA against claims arising from client's content, data, or use of deliverables in violation of law or third-party rights`,
   },
   {
     icon: FileText,
     title: "Confidentiality",
     content: `Both parties agree to maintain confidentiality of proprietary information:
 
-KindSoft will:
+KindSoftUA will:
 • Keep client's business information, data, and project details confidential
 • Not disclose confidential information to third parties without permission
 • Use confidential information only for providing agreed services
 • Return or destroy confidential information upon project completion
 
 Client acknowledges:
-• KindSoft may use standard development tools and environments
+• KindSoftUA may use standard development tools and environments
 • Generic methodologies and solutions are not considered confidential
-• Public information or information in KindSoft's prior possession is not confidential
+• Public information or information in KindSoftUA's prior possession is not confidential
 
 For highly sensitive projects, separate Non-Disclosure Agreements (NDAs) can be executed.`,
   },
@@ -129,7 +129,7 @@ Project Termination:
 • Either party may terminate a project with written notice
 • Client remains responsible for payment for work completed
 • Upon termination, client receives work completed to date (upon payment)
-• KindSoft reserves the right to terminate projects for non-payment or material breach
+• KindSoftUA reserves the right to terminate projects for non-payment or material breach
 
 Force Majeure:
 • Neither party is liable for delays due to circumstances beyond reasonable control
@@ -141,8 +141,8 @@ export function TermsOfServicePage() {
   return (
     <div className="overflow-hidden">
       <SEO
-        title="Terms of Service - KindSoft"
-        description="Read KindSoft's terms of service for our digital solutions and services."
+        title="Terms of Service - KindSoftUA"
+        description="Read KindSoftUA's terms of service for our digital solutions and services."
       />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-50 via-white to-yellow-50 py-20">
@@ -159,7 +159,7 @@ export function TermsOfServicePage() {
               Terms of Service <span className="text-5xl md:text-6xl">📋</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Please read these terms carefully before using KindSoft's services. These terms
+              Please read these terms carefully before using KindSoftUA's services. These terms
               govern your use of our website and services.
             </p>
             <div className="mt-6 text-sm text-gray-500">
@@ -179,8 +179,8 @@ export function TermsOfServicePage() {
             className="prose prose-lg max-w-none"
           >
             <p className="text-lg text-gray-700 leading-relaxed">
-              Welcome to KindSoft. These Terms of Service ("Terms") constitute a legally binding
-              agreement between you (the "Client") and KindSoft ("we," "us," or "our"), governing
+              Welcome to KindSoftUA. These Terms of Service ("Terms") constitute a legally binding
+              agreement between you (the "Client") and KindSoftUA ("we," "us," or "our"), governing
               your use of our website and services. By engaging our services or using our website,
               you acknowledge that you have read, understood, and agree to be bound by these Terms.
             </p>
@@ -256,10 +256,10 @@ export function TermsOfServicePage() {
             </p>
             <div className="space-y-2 text-gray-700">
               <p>
-                <strong>Email:</strong> legal@kindsoft.com
+                <strong>Email:</strong> legal@KindSoftUA.com
               </p>
               <p>
-                <strong>Address:</strong> KindSoft Web Studio, Poltava, Ukraine
+                <strong>Address:</strong> KindSoftUA Web Studio, Poltava, Ukraine
               </p>
             </div>
           </motion.div>
@@ -276,9 +276,9 @@ export function TermsOfServicePage() {
             className="border-l-4 border-blue-500 pl-6"
           >
             <p className="text-gray-700 leading-relaxed italic">
-              By using KindSoft's website or services, you acknowledge that you have read,
+              By using KindSoftUA's website or services, you acknowledge that you have read,
               understood, and agree to be bound by these Terms of Service and our Privacy Policy.
-              These terms constitute the entire agreement between you and KindSoft regarding the
+              These terms constitute the entire agreement between you and KindSoftUA regarding the
               use of our services.
             </p>
           </motion.div>

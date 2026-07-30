@@ -33,7 +33,7 @@ const values = [
 ];
 
 const milestones = [
-  { year: "2011", event: "KindSoft Founded", description: "Started our journey in Poltava, Ukraine", emoji: "🌱" },
+  { year: "2011", event: "KindSoftUA Founded", description: "Started our journey in Poltava, Ukraine", emoji: "🌱" },
   { year: "2014", event: "50 Projects Milestone", description: "Reached our first major milestone", emoji: "🎉" },
   { year: "2017", event: "International Expansion", description: "Opened offices and served clients globally", emoji: "🌍" },
   { year: "2020", event: "60+ Team Members", description: "Grew our talented team significantly", emoji: "👥" },
@@ -78,8 +78,8 @@ export function AboutPage() {
   return (
     <div className="overflow-hidden">
       <SEO
-        title="About - KindSoft"
-        description="Learn about KindSoft's 15-year journey of creating exceptional digital solutions and our commitment to technical excellence."
+        title="About - KindSoftUA"
+        description="Learn about KindSoftUA's 15-year journey of creating exceptional digital solutions and our commitment to technical excellence."
       />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-50 via-white to-yellow-50 py-20">
@@ -90,7 +90,7 @@ export function AboutPage() {
             className="text-center"
           >
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              About KindSoft <span className="text-5xl md:text-6xl">🌟</span>
+              About KindSoftUA <span className="text-5xl md:text-6xl">🌟</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               15 years of creating digital solutions from Poltava, Ukraine to the world 🇺🇦
@@ -113,7 +113,7 @@ export function AboutPage() {
               </h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
-                  Founded in 2011 in the heart of Poltava, Ukraine, KindSoft began with a simple
+                  Founded in 2011 in the heart of Poltava, Ukraine, KindSoftUA began with a simple
                   mission: to create exceptional digital solutions that make a real difference for
                   businesses worldwide.
                 </p>
@@ -145,7 +145,7 @@ export function AboutPage() {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <ImageWithFallback
                   src={officeImage}
-                  alt="KindSoft office"
+                  alt="KindSoftUA office"
                   className="w-full h-[500px] object-cover"
                 />
               </div>
@@ -281,7 +281,7 @@ export function AboutPage() {
               Meet Our Leadership <span className="text-4xl">👥</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Experienced professionals guiding KindSoft to new heights
+              Experienced professionals guiding KindSoftUA to new heights
             </p>
           </motion.div>
 
@@ -327,7 +327,7 @@ export function AboutPage() {
                 Why Work With Us? <span className="text-4xl">🤔</span>
               </h2>
               <p className="text-xl text-gray-600 mb-8">
-                Partnering with KindSoft means choosing excellence, reliability, and innovation
+                Partnering with KindSoftUA means choosing excellence, reliability, and innovation
               </p>
               <div className="space-y-4">
                 {[
@@ -362,7 +362,7 @@ export function AboutPage() {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <ImageWithFallback
                   src={teamImage}
-                  alt="KindSoft team collaboration"
+                  alt="KindSoftUA team collaboration"
                   className="w-full h-[500px] object-cover"
                 />
               </div>

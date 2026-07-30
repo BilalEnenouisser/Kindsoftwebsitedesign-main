@@ -42,7 +42,7 @@ export function Logo({ className = "" }: { className?: string }) {
       </svg>
       <div className="flex flex-col">
         <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-500 bg-clip-text text-transparent">
-          KindSoft
+          KindSoftUA
         </span>
         <span className="text-xs text-gray-600 -mt-1">Web Studio</span>
       </div>

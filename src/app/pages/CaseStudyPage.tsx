@@ -76,7 +76,7 @@ const caseStudies: Record<string, CaseStudy> = {
     ],
     testimonial: {
       quote:
-        "The new platform transformed our online presence. Sales increased by 280% in the first quarter, and customer feedback has been overwhelmingly positive. KindSoft truly understood our brand vision.",
+        "The new platform transformed our online presence. Sales increased by 280% in the first quarter, and customer feedback has been overwhelmingly positive. KindSoftUA truly understood our brand vision.",
       author: "Sam Rabbani",
       role: "NYNE Audio",
       image: samRabbaniImage,
@@ -118,7 +118,7 @@ const caseStudies: Record<string, CaseStudy> = {
     ],
     testimonial: {
       quote:
-        "KindSoft modernized our 40-year-old business with a platform that perfectly serves both our contractors and retail customers. The quote system alone has saved us countless hours, and our online orders have tripled.",
+        "KindSoftUA modernized our 40-year-old business with a platform that perfectly serves both our contractors and retail customers. The quote system alone has saved us countless hours, and our online orders have tripled.",
       author: "Brian Horn",
       role: "Select Sand & Gravel",
       image: brianHornImage,
@@ -158,7 +158,7 @@ const caseStudies: Record<string, CaseStudy> = {
     ],
     testimonial: {
       quote:
-        "KindSoft transformed our vision into an exquisite digital experience. The WordPress platform perfectly captures the elegance and exclusivity of our brand. Our bookings increased by 320% within six months, and clients consistently praise the seamless booking experience.",
+        "KindSoftUA transformed our vision into an exquisite digital experience. The WordPress platform perfectly captures the elegance and exclusivity of our brand. Our bookings increased by 320% within six months, and clients consistently praise the seamless booking experience.",
       author: "Andrea Degasperi",
       role: "Luxo Italia Travel",
       image: andreaDegasperiImage,
@@ -173,7 +173,7 @@ export function CaseStudyPage() {
   if (!study) {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <SEO title="Case Study Not Found - KindSoft" noindex />
+        <SEO title="Case Study Not Found - KindSoftUA" noindex />
         <div className="text-center">
           <h1 className="text-4xl font-bold mb-4">Case Study Not Found</h1>
           <Link to="/portfolio" className="text-blue-600 hover:underline">
@@ -187,7 +187,7 @@ export function CaseStudyPage() {
   return (
     <div className="overflow-hidden">
       <SEO
-        title={`${study.title} - KindSoft`}
+        title={`${study.title} - KindSoftUA`}
         description={`Read about our success story with ${study.title} and how we solved their digital challenges.`}
         noindex
       />

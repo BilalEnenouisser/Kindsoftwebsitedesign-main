@@ -57,7 +57,7 @@ While we strive to protect your personal information, no method of transmission 
 • Portability: Request transfer of your information to another service
 • Withdrawal: Withdraw consent for processing at any time
 
-To exercise these rights, please contact us at privacy@kindsoft.com.`,
+To exercise these rights, please contact us at privacy@KindSoftUA.com.`,
   },
   {
     icon: Bell,
@@ -81,8 +81,8 @@ Types of cookies we use:
     title: "Contact Us",
     content: `If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:
 
-Email: privacy@kindsoft.com
-Address: KindSoft Web Studio, Poltava, Ukraine
+Email: privacy@KindSoftUA.com
+Address: KindSoftUA Web Studio, Poltava, Ukraine
 Phone: Available upon request
 
 We will respond to your inquiry within 30 days.
@@ -95,8 +95,8 @@ export function PrivacyPolicyPage() {
   return (
     <div className="overflow-hidden">
       <SEO
-        title="Privacy Policy - KindSoft"
-        description="Read KindSoft's privacy policy to understand how we protect your information."
+        title="Privacy Policy - KindSoftUA"
+        description="Read KindSoftUA's privacy policy to understand how we protect your information."
       />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-50 via-white to-yellow-50 py-20">
@@ -113,7 +113,7 @@ export function PrivacyPolicyPage() {
               Privacy Policy <span className="text-5xl md:text-6xl">🔒</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Your privacy is important to us. This policy explains how KindSoft collects, uses,
+              Your privacy is important to us. This policy explains how KindSoftUA collects, uses,
               and protects your personal information.
             </p>
             <div className="mt-6 text-sm text-gray-500">
@@ -133,7 +133,7 @@ export function PrivacyPolicyPage() {
             className="prose prose-lg max-w-none"
           >
             <p className="text-lg text-gray-700 leading-relaxed">
-              At KindSoft, we are committed to protecting your privacy and ensuring the security of
+              At KindSoftUA, we are committed to protecting your privacy and ensuring the security of
               your personal information. This Privacy Policy describes how we collect, use, store,
               and protect your information when you visit our website or use our services. By
               accessing our website or using our services, you agree to the terms of this Privacy
@@ -182,7 +182,7 @@ export function PrivacyPolicyPage() {
           >
             <h2 className="text-2xl font-bold mb-4">GDPR Compliance 🇪🇺</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              KindSoft is committed to compliance with the General Data Protection Regulation
+              KindSoftUA is committed to compliance with the General Data Protection Regulation
               (GDPR) and other applicable data protection laws. We process personal data lawfully,
               fairly, and transparently, and only for specified, explicit, and legitimate purposes.
             </p>

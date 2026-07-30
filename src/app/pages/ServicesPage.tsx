@@ -157,7 +157,7 @@ export function ServicesPage() {
   return (
     <div className="overflow-hidden">
       <SEO
-        title="Services - KindSoft"
+        title="Services - KindSoftUA"
         description="Explore our comprehensive digital solutions including web development, mobile apps, and custom software tailored to your business needs."
       />
       {/* Hero Section */}
