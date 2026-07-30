@@ -9,8 +9,8 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email Us",
-    detail: "Hello@KindSoftUA.co",
-    link: "mailto:Hello@KindSoftUA.co",
+    detail: "Hello@KindSoftUA.com",
+    link: "mailto:Hello@KindSoftUA.com",
     emoji: "📧",
   },
   {
