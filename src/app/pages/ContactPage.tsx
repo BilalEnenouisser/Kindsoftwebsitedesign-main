@@ -76,7 +76,8 @@ export function ContactPage() {
 
     try {
       // Get Recaptcha v3 Token
-      const siteKey = '6Lc1qn8sAAAAAJTG6vI2sLdCvYlXrdyab4s4_imy';
+      const siteKey = '6LcMTm0tAAAAALzseFwio7tHLQBIb8S1xqfBuhjc';
+      
       const recaptchaToken = await new Promise<string>((resolve, reject) => {
         if (!(window as any).grecaptcha) {
           reject(new Error("Recaptcha not loaded"));
@@ -402,7 +403,7 @@ export function ContactPage() {
                     LinkedIn
                   </a>
                   <a
-                    href="https://clutch.co/profile/KindSoftUA"
+                    href="https://clutch.co/profile/kindsoftua"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex-1 px-4 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-lg hover:shadow-lg transition-all flex items-center justify-center gap-2"

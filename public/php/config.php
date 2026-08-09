@@ -11,20 +11,20 @@
  */
 
 // --- General Settings ---
-define('RECEIVER_EMAIL', 'Hello@KindSoft.co'); // Your email address
-define('SENDER_NAME', 'KindSoft Website');     // Name that appears as the sender
+define('RECEIVER_EMAIL', 'Hello@KindSoftUA.com'); // Your email address
+define('SENDER_NAME', 'KindSoftUA Website');     // Name that appears as the sender
 define('SUBJECT_PREFIX', 'New Contact Form: '); // Prefix for the subject line
 
 // --- Captcha Settings ---
 define('CAPTCHA_ENABLED', true);
-define('CAPTCHA_SECRET_KEY', '6Lc1qn8sAAAAALYvOZhdSz2kyp5VCotmDk9Q-QAc');
-define('CAPTCHA_SITE_KEY', '6Lc1qn8sAAAAAJTG6vI2sLdCvYlXrdyab4s4_imy');
+define('CAPTCHA_SECRET_KEY', '6LcMTm0tAAAAACvAFcaDdeDK9OhE6LdqpwBXHHJU');
+define('CAPTCHA_SITE_KEY', '6LcMTm0tAAAAALzseFwio7tHLQBIb8S1xqfBuhjc');
 
 // --- SMTP Settings (Optional but recommended) ---
 define('SMTP_ENABLED', true); // Set to true to use SMTP
 define('SMTP_HOST', 'mx1.cityhost.com.ua');
-define('SMTP_USER', 'hello@kindsoft.co');
-define('SMTP_PASS', 'PXk34ypq7K');
+define('SMTP_USER', 'Hello@KindSoftUA.com');
+define('SMTP_PASS', 'ZYV4paTbD0');
 define('SMTP_PORT', 465); // 587 for TLS, 465 for SSL
 define('SMTP_SECURE', 'ssl'); // 'tls' or 'ssl'
 
