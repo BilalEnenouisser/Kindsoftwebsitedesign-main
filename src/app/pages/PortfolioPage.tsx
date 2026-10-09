@@ -262,7 +262,7 @@ export function PortfolioPage() {
               },
               {
                 quote:
-                  "KindSoft understood our long-term vision from day one. They translated our four-pillar ecosystem into a digital presence that speaks directly to investors and operating partners.",
+                  "KindSoftUA understood our long-term vision from day one. They translated our four-pillar ecosystem into a digital presence that speaks directly to investors and operating partners.",
                 author: "Joe Cheung",
                 role: "AJ Harrow Group, Singapore",
                 image:

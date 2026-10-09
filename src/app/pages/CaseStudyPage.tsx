@@ -208,7 +208,7 @@ const caseStudies: Record<string, CaseStudy> = {
     ],
     testimonial: {
       quote:
-        "KindSoft understood our long-term vision from day one. They translated our four-pillar ecosystem into a digital presence that speaks directly to investors and operating partners. The result is authoritative, fast, and easy for our team to manage. Investor enquiries increased significantly within weeks of launch.",
+        "KindSoftUA understood our long-term vision from day one. They translated our four-pillar ecosystem into a digital presence that speaks directly to investors and operating partners. The result is authoritative, fast, and easy for our team to manage. Investor enquiries increased significantly within weeks of launch.",
       author: "Joe Cheung",
       role: "AJ Harrow Group, Singapore",
       image:
