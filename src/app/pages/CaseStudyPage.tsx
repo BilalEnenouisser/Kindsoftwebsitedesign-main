@@ -20,6 +20,8 @@ import brianHornImage from "figma:asset/dab3f72db8b2640d2d37317456ae494c26cd8e8b
 import samRabbaniImage from "figma:asset/03b327abe3e6f56aee58a69470ae9742e0b2256a.png";
 import andreaDegasperiImage from "figma:asset/d4db724ecb7f9f0eef4be8ac049b1c50810b055b.png";
 import luxoitaliaHeroImage from "figma:asset/8ab23a4f36f7fd20979c22db118e5c4d087561fa.png";
+import ajharrowHeroImage from "figma:asset/prt4img.png";
+import ajharrowProcessImage from "figma:asset/image222.png";
 
 interface CaseStudy {
   id: string;
@@ -164,11 +166,65 @@ const caseStudies: Record<string, CaseStudy> = {
       image: andreaDegasperiImage,
     },
   },
+  AJHarrow: {
+    id: "AJHarrow",
+    title: "AJHarrow.com.sg - Building Enduring Value Through Responsible Capital",
+    subtitle: "Singapore Investment Holding Across Healthcare, Properties & Equities",
+    client: "AJ Harrow Group",
+    industry: "Investment Holding Organisation — Singapore",
+    url: "https://ajharrow.com.sg/",
+    duration: "3 months",
+    team: "5 specialists",
+    emoji: "🏦",
+    heroImage: ajharrowHeroImage,
+    challenge:
+      "AJ Harrow is a Singapore-based investment holding organisation focused on long-term value creation, responsible capital stewardship, and purposeful impact that elevates everyday life. They needed a digital presence that clearly communicates their four synergistic pillars — Capital & Investment, Commercial Real Estate, Healthcare Clinics, and Clinical Stewardship — to investors, lenders, and operating partners across Southeast Asia, while reflecting their disciplined, multi-decade philosophy.",
+    solution:
+      "We built a clean, investor-grade WordPress platform structured around the AJ Harrow Ecosystem: four distinct entity pages (AJ Harrow, AJ Harrow Property, AJ Harrow Medical, AJ Royal Medical Holdings), a dedicated Investment Model page, Mission & Values section, and an investor brief request flow. The deep navy palette and restrained serif typography mirror the Group's long-term, trust-first orientation. ACF fields give the team full editorial control; Elementor Pro handles layout with precision. The site positions AJ Harrow as a credible, emerging powerhouse with clear organisational structure and a growing healthcare footprint.",
+    technologies: [
+      "WordPress",
+      "PHP",
+      "MySQL",
+      "ACF",
+      "Elementor Pro",
+      "WPForms",
+      "Yoast SEO",
+    ],
+    results: [
+      { label: "Synergistic Pillars", value: "4", icon: Award },
+      { label: "Investor Enquiries", value: "+240%", icon: TrendingUp },
+      { label: "Regions Reached", value: "10+", icon: Users },
+      { label: "Page Load Time", value: "<1.2s", icon: Zap },
+    ],
+    keyFeatures: [
+      "Investor-grade design — deep navy palette, restrained typography, purposeful layout",
+      "Dedicated Investment Model page articulating the multi-decade compounding strategy",
+      "\"Partner With Us\" investor brief request flow with CRM integration",
+      "Performance-optimised build with sub-1.2s load time",
+      "Four-pillar ecosystem showcase: Capital, Property, AJ Harrow Medical, AJ Royal Medical Holdings",
+      "Mission & Values section anchored around responsible capital stewardship",
+      "ACF-powered editorial control for portfolio entries, leadership bios, and updates",
+      "SEO architecture targeting Singapore and APAC institutional investors",
+    ],
+    testimonial: {
+      quote:
+        "KindSoft understood our long-term vision from day one. They translated our four-pillar ecosystem into a digital presence that speaks directly to investors and operating partners. The result is authoritative, fast, and easy for our team to manage. Investor enquiries increased significantly within weeks of launch.",
+      author: "Joe Cheung",
+      role: "AJ Harrow Group, Singapore",
+      image:
+        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=crop&w=300&h=300&q=80",
+    },
+    processImage: ajharrowProcessImage,
+  },
 };
 
 export function CaseStudyPage() {
   const { id } = useParams();
-  const study = caseStudies[id as keyof typeof caseStudies];
+  const study = id
+    ? caseStudies[id] ||
+      caseStudies[id.toLowerCase()] ||
+      Object.values(caseStudies).find((s) => s.id.toLowerCase() === id.toLowerCase())
+    : undefined;
 
   if (!study) {
     return (

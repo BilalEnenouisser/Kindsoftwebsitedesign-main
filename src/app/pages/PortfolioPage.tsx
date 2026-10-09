@@ -7,6 +7,7 @@ import { Link } from "react-router";
 import selectsgHeroImage from "figma:asset/b5961788d9f6ea7adabbd818f48ed77a2bf304b5.png";
 import nyneHeroImage from "figma:asset/b3f05aa50e46344817f5851cc82c5cbdc699f657.png";
 import luxoitaliaHeroImage from "figma:asset/8ab23a4f36f7fd20979c22db118e5c4d087561fa.png";
+import ajharrowHeroImage from "figma:asset/prt4img.png";
 import brianHornImage from "figma:asset/dab3f72db8b2640d2d37317456ae494c26cd8e8b.png";
 import samRabbaniImage from "figma:asset/03b327abe3e6f56aee58a69470ae9742e0b2256a.png";
 import andreaDegasperiImage from "figma:asset/d4db724ecb7f9f0eef4be8ac049b1c50810b055b.png";
@@ -52,6 +53,19 @@ const projects = [
     emoji: "✨",
     stats: { experiences: "150+", bookings: "+320%", rating: "4.9/5" },
     url: "luxoitalia.com",
+  },
+  {
+    id: "AJHarrow",
+    title: "AJHarrow.com.sg - Singapore Investment Holding",
+    category: "Web Apps",
+    client: "AJ Harrow Group",
+    description:
+      "Investor-grade corporate website for AJ Harrow, a Singapore holding organisation building enduring value through responsible capital. Four synergistic pillars — Capital, Property, Healthcare Clinics, and Clinical Stewardship — presented through a disciplined, authoritative design.",
+    image: ajharrowHeroImage,
+    technologies: ["WordPress", "PHP", "MySQL", "ACF", "Elementor Pro"],
+    emoji: "🏦",
+    stats: { assets: "4", years: "20+", regions: "10+" },
+    url: "ajharrow.com.sg",
   },
 ];
 
@@ -220,7 +234,7 @@ export function PortfolioPage() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
                 quote:
@@ -244,6 +258,15 @@ export function PortfolioPage() {
                 author: "Andrea Degasperi",
                 role: "Luxo Italia Travel",
                 image: andreaDegasperiImage,
+                rating: 5,
+              },
+              {
+                quote:
+                  "KindSoft understood our long-term vision from day one. They translated our four-pillar ecosystem into a digital presence that speaks directly to investors and operating partners.",
+                author: "Joe Cheung",
+                role: "AJ Harrow Group, Singapore",
+                image:
+                  "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=crop&w=300&h=300&q=80",
                 rating: 5,
               },
             ].map((testimonial, index) => (
