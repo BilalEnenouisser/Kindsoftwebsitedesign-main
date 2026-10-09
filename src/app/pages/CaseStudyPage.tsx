@@ -22,6 +22,7 @@ import andreaDegasperiImage from "figma:asset/d4db724ecb7f9f0eef4be8ac049b1c5081
 import luxoitaliaHeroImage from "figma:asset/8ab23a4f36f7fd20979c22db118e5c4d087561fa.png";
 import ajharrowHeroImage from "figma:asset/prt4img.png";
 import ajharrowProcessImage from "figma:asset/image222.png";
+import joeCheungImage from "figma:asset/Joe Cheung.webp";
 
 interface CaseStudy {
   id: string;
@@ -211,8 +212,7 @@ const caseStudies: Record<string, CaseStudy> = {
         "KindSoftUA understood our long-term vision from day one. They translated our four-pillar ecosystem into a digital presence that speaks directly to investors and operating partners. The result is authoritative, fast, and easy for our team to manage. Investor enquiries increased significantly within weeks of launch.",
       author: "Joe Cheung",
       role: "AJ Harrow Group, Singapore",
-      image:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=crop&w=300&h=300&q=80",
+      image: joeCheungImage,
     },
     processImage: ajharrowProcessImage,
   },

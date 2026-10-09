@@ -11,6 +11,7 @@ import ajharrowHeroImage from "figma:asset/prt4img.png";
 import brianHornImage from "figma:asset/dab3f72db8b2640d2d37317456ae494c26cd8e8b.png";
 import samRabbaniImage from "figma:asset/03b327abe3e6f56aee58a69470ae9742e0b2256a.png";
 import andreaDegasperiImage from "figma:asset/d4db724ecb7f9f0eef4be8ac049b1c50810b055b.png";
+import joeCheungImage from "figma:asset/Joe Cheung.webp";
 
 const categories = ["All", "Web Apps", "Mobile Apps", "E-commerce", "Enterprise"];
 
@@ -265,8 +266,7 @@ export function PortfolioPage() {
                   "KindSoftUA understood our long-term vision from day one. They translated our four-pillar ecosystem into a digital presence that speaks directly to investors and operating partners.",
                 author: "Joe Cheung",
                 role: "AJ Harrow Group, Singapore",
-                image:
-                  "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=crop&w=300&h=300&q=80",
+                image: joeCheungImage,
                 rating: 5,
               },
             ].map((testimonial, index) => (
