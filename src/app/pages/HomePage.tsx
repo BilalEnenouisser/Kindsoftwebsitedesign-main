@@ -80,9 +80,10 @@ export function HomePage() {
                 <span className="text-sm text-blue-700">Trusted by Enterprise Clients</span>
               </div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6">
-                Creating Digital
+                WordPress & Web
+                <span className="block">Development</span>
                 <span className="block bg-gradient-to-r from-blue-600 to-yellow-500 bg-clip-text text-transparent">
-                  <span className="border-b-4 border-yellow-400">Solutions</span>
+                  <span className="border-b-4 border-yellow-400">Services</span>
                 </span>
                 Since 2011 ✨
               </h1>
